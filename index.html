@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //let quantasnotas=Number(prompt("quantas notas vc quer digitar?"))
+        //let soma=0
+        //for (let index = 1; index <= quantasnotas; index++){
+        //    let numerodigitado=Number(prompt("qual a "+index+" notas?"))
+        //    soma = soma + numerodigitado
+        //}        
+        //let media = soma/quantasnotas
+        //alert("sua media é: "+media)
+        //let idades = [33, 21, 7, 48, 51, 3]
+        //let frutas = ["banana", "maçã"]
+        //frutas[5] = "uva"
+        //alert(frutas)
+
+        //function media(soma, numeros) {
+        //    return soma/numeros
+        //}
+
+        //function ehdivisivel(primeironumero, segundonumero) {
+        //    if(primeironumero%segundonumero==0) return true
+        //    else return false
+        //}
+
+        //let quantasnotas=Number(prompt("quantas notas vc quer digitar?"))
+        //let soma=0
+
+        //const notas=[]
+
+        //for(let index = 1; index <= quantasnotas; index++){
+        //    let numerodigitado=Number(prompt("qual a "+index+" nota?"))
+        //    const count = notas.push(numerodigitado)
+        //    soma = soma + numerodigitado
+        //}
+        //alert("sua media é: "+media)
+
+        function media(soma, numeros) {
+            return soma/numeros
+        }
+
+        let notas = [], quantasnotas = Number(prompt("quantas notas vc quer digitar?")), somadasnotas=0
+        for (let index = 1; index <= quantasnotas; index++) {
+            notas[index-1]=Number(prompt("qual a "+index+" nota?"))
+            somadasnotas += notas[index-1]
+        }
+
+        alert("suas notas foram: "+notas+". e a sua media foi: "+media(somadasnotas,quantasnotas))
+    </script>
+</body>
+</html>
