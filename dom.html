@@ -11,7 +11,7 @@
             width: 200px;
             padding: 10px;
         }
-        
+    
         .item-lista{
             background-color: rgb(153, 201, 231);
             padding: 5px;
@@ -112,6 +112,32 @@
 
         alert(alunos.map( (aluno) => aluno.curso))
         
+        console.log(alunos.filter((aluno) => aluno.curso == "ia"))
+
+        let alunonovo = {
+            nome: "daniel",
+            idade: 15,
+            curso: "fullcycle",
+            turno: "tarde",
+            data_de_inicio: "09/10/2026",
+        }
+
+        //alunos[alunos.length] = alunonovo;
+        alunos.push(alunonovo)
+        alunos.push({
+            nome: "daniel",
+            idade: 15,
+            curso: "fullcycle",
+            turno: "tarde",
+            data_de_inicio: "09/10/2026",
+        })
+        console.log(alunos)
+        let alunoexcluido = alunos.pop()
+        console.log(alunoexcluido)
+
+        
+
+
 
     </script>
 </body>
